@@ -1,6 +1,9 @@
-# bbmustache
+# Chaplin
 
 [Mustache][mustache] text templates using Erlang's [bbmustache][bbmustache] package.
+
+[![Package Version](https://img.shields.io/hexpm/v/chaplin)](https://hex.pm/packages/chaplin)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/chaplin/)
 
 [mustache]: https://mustache.github.io/
 [bbmustache]: https://github.com/soranoba/bbmustache
@@ -12,7 +15,7 @@ pub fn main() {
   let assert Ok(template) = chaplin.compile("Hello, {{name}}!")
 
   let rendered = chaplin.render(template, [
-    chaplin.string("name", "World"),
+    #("name", chaplin.string("World")),
   ])
 
   assert rendered == "Hello, World!"
