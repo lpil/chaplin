@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Updated the `gleam_stdlib` dependency to allow version `1.0.0`.
+
 ## v1.0.0 - 2025-09-03
 
 - Released as `chaplin`.
